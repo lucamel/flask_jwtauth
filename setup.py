@@ -10,7 +10,7 @@ from setuptools import setup, find_packages
 setup(
     name='Flask-JWTAuth',
     version='0.1',
-    url='http://example.com/flask-jwtauth/',
+    url='https://github.com/lucamel/flask_jwtauth',
     license='BSD',
     author='Luca Melgrati',
     author_email='luca@lucamel.me',
