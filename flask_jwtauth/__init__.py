@@ -22,9 +22,9 @@ class JWTAuth(object):
 
     def init_app(self, app):
         auth_url_rule = "/test"
-        auth_url_options = app.config.get('JWT_AUTH_URL_OPTIONS', {'methods': ['POST']})
+        auth_url_options = app.config.get('JWT_AUTH_URL_OPTIONS', {'methods': ['GET']})
         auth_url_options.setdefault('view_func', self.test_callback)
         app.add_url_rule(auth_url_rule, **auth_url_options)
 
-    def test_callback():
+    def test_callback(self):
         return "OK it works!"
