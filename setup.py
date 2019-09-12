@@ -16,7 +16,7 @@ setup(
     author_email='luca@lucamel.me',
     description='JWT Auth for Flask',
     long_description=__doc__,
-    packages=find_packages(),
+    packages=['flask_jwtauth'],
     # if you would be using a package instead use packages instead
     # of py_modules:
     # packages=['flask_jwtauth'],
